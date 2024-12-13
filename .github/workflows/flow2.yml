@@ -1,4 +1,4 @@
-name: My CI
+name: My CI 2
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ on:
 jobs:
   builds:
     runs-on: ubuntu-latest
-    name: my build 2 askldasd
+    name: my build 2
     steps:
       - name: Check out code
         uses: actions/checkout@v4
