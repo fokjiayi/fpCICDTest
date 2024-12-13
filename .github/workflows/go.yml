@@ -1,0 +1,17 @@
+name: My CI
+on:
+  push:
+    branches: [main]
+# this will run when soemthing is pushed to the main branch
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    name: my build
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Setup go
+        uses: actions/setup-go@v5.2.0
+        with:
+          go-version: 1.17.0
