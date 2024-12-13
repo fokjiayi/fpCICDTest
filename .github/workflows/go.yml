@@ -32,3 +32,5 @@ jobs:
       - name: List out hidden files
         run: |
           ls
+          hiddenFolder
+          ls
