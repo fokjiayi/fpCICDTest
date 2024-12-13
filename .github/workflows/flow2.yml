@@ -7,7 +7,7 @@ on:
 jobs:
   builds:
     runs-on: ubuntu-latest
-    name: my build 2
+    name: my build 2 askldasd
     steps:
       - name: Check out code
         uses: actions/checkout@v4
