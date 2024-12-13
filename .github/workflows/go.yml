@@ -9,31 +9,31 @@ jobs:
     runs-on: ubuntu-latest
     name: my build
     steps:
-      # - name: Check out code
-      #   uses: actions/checkout@v4
-      # - name: Setup go
-      #   uses: actions/setup-go@v5.2.0
-      #   with:
-      #     go-version: 1.23.0
-      # - name: what is go version
-      #   run: | 
-      #     go version
-      # - name: run test 
-      #   run: | 
-      #     go test -cover
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Setup go
+        uses: actions/setup-go@v5.2.0
+        with:
+          go-version: 1.23.0
+      - name: what is go version
+        run: | 
+          go version
+      - name: run test 
+        run: | 
+          go test -cover
           
-      # - name: Checkout private repo remotely 
-      #   uses: actions/checkout@v4
-      #   with:
-      #     repository: fokjiayi/pandaHiddenRepo
-      #     path: hiddenFolder
-      #     token: ${{ secrets.REPO_TOKEN }}
+      - name: Checkout private repo remotely 
+        uses: actions/checkout@v4
+        with:
+          repository: fokjiayi/pandaHiddenRepo
+          path: hiddenFolder
+          token: ${{ secrets.REPO_TOKEN }}
 
-      # - name: List out hidden files
-      #   run: |
-      #     ls
-      #     cd hiddenFolder
-      #     ls
+      - name: List out hidden files
+        run: |
+          ls
+          cd hiddenFolder
+          ls
 
       # - name: Notify Discord
       #   uses: discord-actions/message@v2
