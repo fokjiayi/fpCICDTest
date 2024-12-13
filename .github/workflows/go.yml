@@ -39,5 +39,5 @@ jobs:
         uses: discord-actions/message@v2
         with:
           webhookUrl: ${{ secrets.DISCORD }}
-          message: "Hello, its jy"
+          message: "Hello, its jy FOK"
             
