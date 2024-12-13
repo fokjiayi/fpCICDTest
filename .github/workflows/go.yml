@@ -35,9 +35,9 @@ jobs:
       #     cd hiddenFolder
       #     ls
 
-      - name: Notify Discord
-        uses: discord-actions/message@v2
-        with:
-          webhookUrl: ${{ secrets.DISCORD }}
-          message: "Hello, its jy FOK"
+      # - name: Notify Discord
+      #   uses: discord-actions/message@v2
+      #   with:
+      #     webhookUrl: ${{ secrets.DISCORD }}
+      #     message: "Hello, its jy FOK"
             
