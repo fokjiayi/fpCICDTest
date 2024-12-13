@@ -20,7 +20,7 @@ jobs:
           go version
       - name: run test 
         run: | 
-          go test
+          go test -cover
           
       - name: Checkout private repo remotely 
         uses: actions/checkout@v4
