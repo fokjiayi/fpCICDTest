@@ -21,3 +21,14 @@ jobs:
       - name: run test 
         run: | 
           go test
+          
+      - name: Checkout private repo remotely 
+        uses: actions/checkout@v4
+        with:
+          repository: fokjiayi/pandaHiddenRepo
+          path: hiddenFolder
+          token: ${{ secrets.REPO_TOKEN }}
+
+      - name: List out hidden files
+        run: |
+          ls
